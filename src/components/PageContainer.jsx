@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { tabs } from "../data/tabs";
 
 export const PageContainer = ({ selectedTabId, selectedSubTabId }) => {
@@ -13,9 +12,4 @@ export const PageContainer = ({ selectedTabId, selectedSubTabId }) => {
       <b>Tab</b> : {selectedTab.name} -- <b>SubTab</b> :{selecetedSubTab.name}
     </p>
   );
-};
-
-PageContainer.propTypes = {
-  selectedTabId: PropTypes.number.isRequired,
-  selectedSubTabId: PropTypes.number.isRequired,
 };
